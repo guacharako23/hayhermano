@@ -3,12 +3,12 @@ import 'firebase/firestore'
 import 'firebase/auth'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCFXq1B5tipr93qS3bAF7Sv4X8pKEPscNM",
-    authDomain: "login-bafd5.firebaseapp.com",
-    projectId: "login-bafd5",
-    storageBucket: "login-bafd5.appspot.com",
-    messagingSenderId: "74733482299",
-    appId: "1:74733482299:web:30a18d8db161c9d232c71e"
+  apiKey: "AIzaSyDve9Uu5F2L7Ma337flOid2fSsUNkkauqo",
+  authDomain: "rubricatres.firebaseapp.com",
+  projectId: "rubricatres",
+  storageBucket: "rubricatres.appspot.com",
+  messagingSenderId: "327244427232",
+  appId: "1:327244427232:web:0a24bfb83ec5f7a8a40585"
   };
   
   // Initialize Firebase
