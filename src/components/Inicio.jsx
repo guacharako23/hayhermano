@@ -1,6 +1,5 @@
 import React from "react";
 import imagenUno from './img/inicio1.png';
-import './Inicio.css'; // Archivo CSS para estilos específicos de Inicio
 
 const Inicio = () => {
   return (
@@ -16,7 +15,7 @@ const Inicio = () => {
             </p>
           </div>
           <div>
-            <h4 className="mt-4">MÁS DE 11 AÑOS DE EXPERIENCIA</h4>
+            <h4 className="mt-4">Lideres en Colombia</h4>
             <p className="text-secondary">
               Potenciar el aprendizaje en los estudiantes y el ejercicio de la función docente e investigativa, 
               mediante el acceso efectivo a los recursos de información y la provisión de escenarios físicos y virtuales, 
