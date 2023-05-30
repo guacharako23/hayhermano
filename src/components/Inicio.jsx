@@ -1,5 +1,6 @@
 import React from "react";
-import imagenUno from './img/inicio1.png'
+import imagenUno from './img/inicio1.png';
+import './Inicio.css'; // Archivo CSS para estilos específicos de Inicio
 
 const Inicio = () => {
   return (
