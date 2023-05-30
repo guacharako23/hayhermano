@@ -208,7 +208,7 @@ const Registro = (props) => {
               <option value="LIBROS DIGITALES">
                 LIBROS DIGITALES
               </option>
-              <option value="Servicio">COMICS, REVISTAS</option>
+              <option value="COMICS, REVISTAS">COMICS, REVISTAS</option>
             </select>
             {categoria === "" ? (
               <div className="alert alert-light text-center" role="alert">
