@@ -202,10 +202,10 @@ const Registro = (props) => {
               defaultValue=""
             >
               <option value="">Elija una opción</option>
-              <option value="Mantenimiento de inmuebles">
+              <option value="LIBROS FISICOS">
                 LIBROS FISICOS
               </option>
-              <option value="Mantenimiento de muebles">
+              <option value="LIBROS DIGITALES">
                 LIBROS DIGITALES
               </option>
               <option value="Servicio">COMICS, REVISTAS</option>
