@@ -15,7 +15,7 @@ const Navbar = (props) => {
   return (
     <div className="navbar navbar-dark bg-dark">
       <Link className="navbar-brand mx-4" to="/">
-        Mi empresita
+        BIBLIOTECA CUC
       </Link>
       <div>
         <div className="d-flex">
