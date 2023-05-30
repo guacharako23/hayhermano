@@ -44,12 +44,12 @@ const Registro = (props) => {
   const editar = async (e) => {
     e.preventDefault();
     if (categoria === "") {
-      setError("Selecciona una categoría principal.");
+      setError("Por Favor Indique su Solicitud.");
     } else if (tipo === "") {
-      setError("Selecciona el tipo de servicio.");
+      setError("Selecciona que necesidad tienes.");
     } else if (ubicacion.trim().length === 0) {
       setError(
-        "Indique la ubicación donde requiere el servicio."
+        "Indique Como quiere obtener el libro consultado."
       );
     } else if (descripcion === "" || descripcion.trim().length === 0) {
       setError("La descripción es obligatoria, por favor, sea específico.");
@@ -99,12 +99,12 @@ const Registro = (props) => {
   const agregarDatos = async (e) => {
     e.preventDefault();
     if (categoria === "") {
-      setError("Selecciona una categoría principal.");
+      setError("Por Favor Indique su Solicitud.");
     } else if (tipo === "") {
-      setError("Selecciona el tipo de servicio.");
+      setError("Selecciona que necesidad tienes.");
     } else if (ubicacion.trim().length === 0) {
       setError(
-        "Indique la ubicación donde requiere el servicio."
+        "Indique Como quiere obtener el libro consultado."
       );
     } else if (descripcion === "" || descripcion.trim().length === 0) {
       setError("La descripción es obligatoria, por favor, sea específico.");
@@ -149,8 +149,8 @@ const Registro = (props) => {
   };
   const eliminarDato = async (id) => {
     swal({
-      title: "¿Seguro que deseas eliminar esta solicitud?",
-      text: "¡Una vez eliminada, no podrás recuperarla!",
+      title: "¿Seguro que deseas borrar esto",
+      text: "¡Una vez borrado no hay marcha atras!",
       icon: "warning",
       buttons: true,
       dangerMode: true,
@@ -166,7 +166,7 @@ const Registro = (props) => {
           console.log(error);
         }
         swal({
-          title: "¡Su solicitud ha sido eliminada con éxito!",
+          title: "¡Su solicitud ha sido borrada y no podra recuperar!",
           icon: "success",
           timer: 2000,
         });
@@ -203,67 +203,67 @@ const Registro = (props) => {
             >
               <option value="">Elija una opción</option>
               <option value="Mantenimiento de inmuebles">
-                MANTENIMIENTO DE INMUEBLES
+                LIBROS FISICOS
               </option>
               <option value="Mantenimiento de muebles">
-                MANTENIMIENTO DE MUEBLES
+                LIBROS DIGITALES
               </option>
-              <option value="Servicio">SERVICIO</option>
+              <option value="Servicio">COMICS, REVISTAS</option>
             </select>
             {categoria === "" ? (
               <div className="alert alert-light text-center" role="alert">
                 ¡Seleccione una categoría primero!
               </div>
             ) : null}
-            {categoria === "Mantenimiento de inmuebles" ? (
+            {categoria === "LIBROS FISICOS" ? (
               <select
-                name="Mantenimiento de inmuebles"
+                name="LIBROS FISICOSs"
                 className="form-select"
                 aria-label="Default select example"
                 onChange={(e) => setTipo(e.target.value)}
                 defaultValue=""
               >
                 <option value="">Elija una opción</option>
-                <option value="Baños">Baños</option>
-                <option value="Cielo razo">Cielo razo</option>
-                <option value="Pared">Pared</option>
-                <option value="Eléctrico">Eléctrico</option>
-                <option value="Puerta">Puerta</option>
+                <option value="Primeras Ediciones">Primeras Edicioens</option>
+                <option value="Literatura">Literatura</option>
+                <option value="De consulta y Referencia">De consulta y Referencia</option>
+                <option value="Tecnicos y Especializados">Tecnicos y Especializados</option>
+                <option value="Religiosos y Sagrados">Religiosos y Sagrados</option>
               </select>
             ) : null}
-            {categoria === "Mantenimiento de muebles" ? (
+            {categoria === "Libros Digitales" ? (
               <select
-                name="Mantenimiento de muebles"
+                name="Libros Digitales"
                 className="form-select"
                 aria-label="Default select example"
                 onChange={(e) => setTipo(e.target.value)}
                 defaultValue=""
               >
                 <option value="">Elija una opción</option>
-                <option value="Aire acondicionado">Aire acondicionado</option>
-                <option value="Archivador">Archivador</option>
-                <option value="Silla">Silla</option>
-                <option value="Puesto de trabajo">Puesto de trabajo</option>
+                <option value="E-book">E-book</option>
+                <option value="Digital Interactivo">Digital Interactivo</option>
+                <option value="PDF">PDF</option>
+                <option value="DOC">DOC</option>
               </select>
             ) : null}
-            {categoria === "Servicio" ? (
+            {categoria === "COMICS, REVISTAS" ? (
               <select
-                name="Servicio"
+                name="COMICS, REVISTAS"
                 className="form-select"
                 aria-label="Default select example"
                 onChange={(e) => setTipo(e.target.value)}
                 defaultValue=""
               >
                 <option value="">Elija una opción</option>
-                <option value="Aseo">Aseo</option>
-                <option value="Vigilancia">Vigilancia</option>
-                <option value="Transporte">Transporte</option>
+                <option value="Documento Cientifico">Documento Cientifico</option>
+                <option value="Comics">comics</option>
+                <option value="Articulos Investigativo">Articulos Investigativo</option>
               </select>
             ) : null}
             <input
               type="text"
               className="form-control mb-3 mt-3"
-              placeholder="Ingrese la ubicación"
+              placeholder="Ingrese la ubicaion"
               onChange={(e) => setUbicacion(e.target.value)}
               value={ubicacion}
             />
@@ -282,7 +282,7 @@ const Registro = (props) => {
                 </button>
               ) : (
                 <button className="btn btn-outline-info" type="submit">
-                  Agregar petición
+                  Agregar ubicacion
                 </button>
               )}
             </div>
